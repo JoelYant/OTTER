@@ -146,8 +146,8 @@ int main() {
 	glDebugMessageCallback(GlDebugMessage, nullptr);
 
 	static const GLfloat points[] = {
-		-0.5f, -0.5f, 0.5f,
-		0.5f, -0.5f, 0.5f,
+		-0.5f, -1.0f, 0.5f,
+		0.5f, -1.0f, 0.5f,
 		-0.5f, 0.5f, 0.5f
 	};
 
@@ -180,9 +180,9 @@ int main() {
 	static const float interleaved[] = {
 		// X Y Z R G B
 		  0.5f, -0.5f, 0.5f, 0.0f, 0.0f, 0.0f,
-		  0.5f,  0.5f, 0.5f, 0.3f, 0.2f, 0.5f,
-		 -0.5f,  0.5f, 0.5f, 1.0f, 1.0f, 0.0f,
-		 -0.5f,  0.0f, 0.5f, 1.0f, 1.0f, 1.0f
+		  0.5f,  1.0f, 0.5f, 0.3f, 0.2f, 0.5f,
+		 -0.5f,  1.0f, 0.5f, 1.0f, 1.0f, 0.0f,
+		 -0.5f,  1.0f, 0.5f, 1.0f, 1.0f, 1.0f
 	};
 	VertexBuffer* interleaved_vbo = new VertexBuffer();
 	interleaved_vbo->LoadData(interleaved, 6 * 4);
